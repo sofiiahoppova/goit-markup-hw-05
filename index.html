@@ -439,7 +439,7 @@
             marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="social-media-container">
           <p class="social-media-list-title">Social media</p>
           <ul class="social-media-list">
             <li class="social-media-list-item">
@@ -472,7 +472,110 @@
             </li>
           </ul> 
         </div>
+        <div class="subscribe-form-container">
+          <p class="subscribe-form-title">Subscribe</p>
+          <form class="subscribe-form">
+            <input type="email" 
+            class="subscribe-form-input" 
+            name="user-email"
+            placeholder="E-mail">
+            <button type="submit" 
+            class="subscribe-form-submit-btn">
+              Subscribe
+              <svg class="subscribe-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-btn-icon" 
+          width="8" 
+          height="8"
+          >
+            <use href="./images/icons.svg#icon-close-window"></use>
+          </svg>
+        </button>
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <form class="order-servise-form">
+          <div class="order-servise-form-input-wrapper">
+            <label for="user-name" class="order-servise-form-field-label">
+              Name
+            </label>
+            <div class="form-input-wrapper">
+              <input type="text" 
+              class="order-servise-form-input" 
+              name="user-name" 
+              id="user-name">
+              <svg class="form-input-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-user-avatar"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-servise-form-input-wrapper">
+            <label for="user-phone" class="order-servise-form-field-label">
+              Phone
+            </label>
+            <div class="form-input-wrapper">
+              <input type="tel" 
+              class="order-servise-form-input"
+              name="user-phone"
+              id="user-phone">
+              <svg class="form-input-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-telephone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-servise-form-input-wrapper">
+            <label for="user-email" class="order-servise-form-field-label">
+              Email
+            </label>
+            <div class="form-input-wrapper">
+              <input type="email" 
+              class="order-servise-form-input"
+              name="user-email"
+              id="user-email">
+              <svg class="form-input-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-servise-form-input-wrapper">
+            <label for="user-comment" class="order-servise-form-field-label">
+              Comment
+            </label>
+            <textarea
+            class="order-servise-form-message"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Text input">
+            </textarea>
+          </div>
+          <div class="order-servise-form-checbox-wrapper">
+            <input type="checkbox" 
+            class="order-servise-form-privacy-checkbox visually-hidden"
+            id="privacy-policy"
+            name="privacy-policy"
+            value="true">
+            <label for="privacy-policy" 
+            class="order-servise-form-checkbox-label">
+            <span class="order-servise-form-own-checkbox">
+              <svg class="form-checkbox-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the <a href="" class="privacy-policy-link">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="order-servise-form-submit-btn">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
